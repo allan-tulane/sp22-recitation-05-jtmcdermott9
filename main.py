@@ -17,7 +17,7 @@ def supersort(a, k):
     return construct_output(a, positions)
 
 def count_values(a, k):
-    """
+  """
     Params:
       a.....input list
       k.....maximum value in a
@@ -30,7 +30,13 @@ def count_values(a, k):
     [2, 3, 2, 1]
     """
     ###TODO
-    pass
+  out_list = []
+  for i in a:
+    prev_vals = []
+    if i in prev_vals:
+      pass
+    out_list.append(i)
+  return out_list
 
 def test_count_values():
     assert count_values([2,2,1,0,1,0,1,3], 3) == [2, 3, 2, 1]
